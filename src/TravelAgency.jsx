@@ -58,6 +58,59 @@ export const TravelAgency = ()=>{
             <img className="img-header mt-3" src="https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="" />
           </div>       
         </div>
+        <div className="row mt-5">
+          <div className="col-4">
+            <h2 className="display-5">Popular places</h2>
+          </div>
+          <div className="col-8">
+            <ul className="nav nav-tabs">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Beach</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Mountain</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Waterfall</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link disabled">City</a>
+              </li>
+            </ul>                        
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-4 mt-3">
+            <div className="card">
+              <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img-top" alt="..."/>
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" className="btn btn-primary">Go somewhere</a>
+              </div>
+            </div> 
+          </div>
+          <div className="col-4 mt-3">
+            <div className="card">
+              <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img-top" alt="..."/>
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" className="btn btn-primary">Go somewhere</a>
+              </div>
+            </div> 
+          </div>
+          <div className="col-4 mt-3">
+            <div className="card">
+              <img src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img-top" alt="..."/>
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" className="btn btn-primary">Go somewhere</a>
+              </div>
+            </div> 
+          </div>
+        </div>
       </div>      
     </>
   );
