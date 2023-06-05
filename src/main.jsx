@@ -5,6 +5,6 @@ import { DestinyDetail } from './pages/DestinyDetail';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <DestinyDetail />
+    <TravelAgency />
   </React.StrictMode>,
 );
