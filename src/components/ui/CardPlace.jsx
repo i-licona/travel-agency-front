@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const CardPlace = ({ title, subtitle, img }) => {
+
+  const navigate = useNavigate();
+
+  const onRedirectTo = () =>{
+    navigate('/destiny-detail');
+  }
+
   return (
-    <div className="col-sm-12 col-md-4 mt-3">
+    <div onClick={ () => onRedirectTo() } style={{ cursor:'pointer' }}  className="col-sm-12 col-md-4 mt-3">
       <div className="card">
         <img src={ img } className="card-img-top" alt="..."/>
         <div className="card-body">
