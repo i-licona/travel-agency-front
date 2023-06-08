@@ -16,8 +16,8 @@ export const Navbar = () => {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <button className="btn btn-warning me-2">Crear cuenta</button>
-            <button className="btn btn-outline-success" type="submit">Iniciar sesión</button>
+            <button className="btn btn-success me-2">Create acount</button>
+            <button className="btn btn-outline-success" type="submit">Login</button>
           </form>
         </div>
       </div>

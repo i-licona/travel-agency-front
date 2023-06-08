@@ -1,6 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
+
+const categories = [
+  { id:1, text:'Beach' },
+  { id:2, text:'Mountain' },
+  { id:3, text:'Waterfall' },
+  { id:4, text:'City' }
+];
+
 
 export const PopularPlaces = () => {
+  /* hooks : funcion */
+  const [active, setActive] = useState(1);
+
   return (
     <div className="row mt-5">
       <div className="col-sm-12 col-md-4">
@@ -8,18 +19,13 @@ export const PopularPlaces = () => {
       </div>
       <div className="col-sm-12 col-md-8">
         <ul className="nav nav-tabs">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Beach</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Mountain</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Waterfall</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled">City</a>
-          </li>
+          {
+            categories.map((x) => (
+              <li style={{ cursor:'pointer' }} className="nav-item" key={ x.id } onClick={ () => setActive(x.id) }>
+                <a className={ `nav-link ${ active == x.id ? 'active' : '' }` } aria-current="page">{ x.text }</a>
+              </li>
+            ))
+          }
         </ul>                        
       </div>
     </div>
